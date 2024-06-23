@@ -8,7 +8,7 @@ public class OrderSecondPage {
     private WebDriver driver;
 
     private By datePickerDropdown = By.xpath("//div[@class='react-datepicker__input-container']"); // дропдаун для выбора даты
-    private By datePickerCalendar = By.xpath("//div[@class='react-datepicker__day react-datepicker__day--021 react-datepicker__day--keyboard-selected react-datepicker__day--today']"); // локатор внутри календаря
+    private By datePickerCalendar = By.xpath("//div[contains(@class,'react-datepicker__day') and contains(@class,'19')]"); // локатор внутри календаря
     private By rentTermDropDown = By.xpath("//div[@class='Dropdown-placeholder']"); // дропдаун для выбора даты аренды
     private By rentTermFiveDays = By.xpath(".//div[@class='Dropdown-option' and text()='пятеро суток']"); // локатор для выбора "пять суток"
     private By upperCheckBox = By.xpath("//input[@id='black']"); // локатор верхнего чекбокса
